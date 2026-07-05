@@ -13,5 +13,11 @@ typedef struct{
 #define UART_BASE_ADDRESS (0x40013800)
 #define UART1 ((UART_Registers_t *)(UART_BASE_ADDRESS))
 
+int main(void) {
 
-UART1->CR1 |= (1<<0);
+	UART1->CR1 |= (1<<0);
+	
+    while(1) {
+        // El código principal corre aquí para siempre
+    }
+}
